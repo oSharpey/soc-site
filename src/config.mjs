@@ -12,7 +12,7 @@ const CONFIG = {
     'The University of Warwick Cyber Security Society is a student-run society that aims to promote the study of cyber security and related topics to students at the University of Warwick.',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'dark', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: 'en',
   textDirection: 'ltr',
