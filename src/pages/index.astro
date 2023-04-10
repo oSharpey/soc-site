@@ -1,0 +1,153 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import LatestPosts from '~/components/blog/LatestPosts.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Hello and welcome to the <span class="font-semibold text-accent dark:text-white highlight">Warwick Cyber Security Society!</span>  We're a friendly and inclusive community centred around our love of Cyber Security. </span>
+        From competing in CTFs to hosting talks and great socials, we're definitely the place to be if you love all things cyber, 
+        want to get involved with an up and coming discipline, or just want to have some fun! <br> <br> 
+        <span class="font-semibold text-accent dark:text-white highlight text-xl">More Info Below!</span>
+    </Fragment>
+  </Hero>
+
+  <Features
+    title="Society Achivements"
+
+    items={[
+      [
+        {
+          title: '#1 - pwnEd2 CTF (2021)',
+          description:
+            '',
+          icon: 'tabler:chevrons-right',
+        },
+        {
+          title: '#1 - Veracode The Hacker Games (2021)',
+          description:
+            '',
+          icon: 'tabler:chevrons-right',
+        },
+      ],
+      [
+        {
+          title: '#1 - HTB x UNI CTF Qualifiers (2021)',
+          description:
+            '',
+          icon: 'tabler:chevrons-right',
+        },
+        {
+          title: '#1 - BAESystems & University of Warwick Computing Society (2021)',
+          description:
+            '',
+          icon: 'tabler:chevrons-right',
+        },
+      ],
+    ]}
+  />
+
+
+ <!-- Features2 Widget ************** -->
+  <Features2
+    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    title="Meet the Exec!"
+    subtitle=""
+    highlight=""
+    items={[
+      {
+        title: 'Ana Vijay',
+        description:
+          'President',
+        image: '/src/assets/images/exec/ana.JPG',
+      },
+      {
+        title: 'Oscar Sharpe',
+        description:
+          'Secretary',
+        image: '/src/assets/images/exec/oscars.jpg',
+      },
+      {
+        title: 'Ellis Trisk-Grove',
+        description:
+          'Treasurer',
+        image: '/src/assets/images/exec/ellis.jpg',
+      },
+      {
+        title: 'George Liddell',
+        description:
+          'Welfare Officer',
+        image: '/src/assets/images/exec/george.jpg',
+      },
+      {
+        title: 'Rhys Davies',
+        description:
+          'Social Secretary',
+        image: '/src/assets/images/exec/rhys.jpg',
+      },
+      {
+        title: 'Gabs Smith',
+        description:
+          'Social Secretary',
+        image: '/src/assets/images/exec/gabs.jpg',
+      },
+      {
+        title: 'Oscar Williamson',
+        description:
+          'Technician',
+        image: '/src/assets/images/exec/oscarw.jpg',
+      },
+      {
+        title: 'Samyak Jeevane',
+        description:
+          'Postgraduate Officer',
+        image: '/src/assets/images/exec/samyak.jpg',
+      },
+      {
+        title: 'Sarah Tipper',
+        description:
+          'Women\'s Officer',
+        image: '/src/assets/images/exec/sarah.jpg',
+      },
+      {
+        title: 'Devon Connor',
+        description:
+          'External Comms Officer',
+        image: '/src/assets/images/exec/devon.jpg',
+      },
+    ]}
+  />
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <LatestPosts
+    title="Recent Soc News"
+    information={`
+		`}
+    postIds={[
+      'get-started-website-with-astro-tailwind-css.md',
+      'how-to-customize-astrowind-to-your-brand.md',
+      'useful-resources-to-create-websites.md',
+      'astrowind-template-in-depth.md',
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+</Layout>
