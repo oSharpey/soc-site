@@ -21,8 +21,8 @@ export const footerData = {
     { text: 'Report a Security Issue', href: 'mailto:cybersoc@warwick.ac.uk' },
   ],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/warwickcybersoc/' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/wmgcyber' },
     { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: ' https://discord.com/invite/WkKTxjEzUt'},
     { ariaLable: 'Mail', icon: 'tabler:mail', href: 'mailto:cybersoc@warwick.ac.uk' },
   ],
